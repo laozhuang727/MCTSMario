@@ -20,8 +20,8 @@ import java.awt.event.ItemListener;
  */
 public class GameViewer extends JFrame
 {
-    Dimension defaultSize = new Dimension(900, 800);
-    Point defaultLocation = new Point(350, 10);
+    Dimension defaultSize = new Dimension(2700, 2400);
+    Point defaultLocation = new Point(700, 20);
 
     //    Thread animator;
     //    int frame;

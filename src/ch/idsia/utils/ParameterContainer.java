@@ -181,31 +181,31 @@ public class ParameterContainer
 //            new HumanKeyboardAgent();
             defaultOptionsHashMap.put("-ag","HumanKeyboardAgent"); //defaultOptionsHashMap.put("-agentName","NoAgent");
             defaultOptionsHashMap.put("-echo","off"); //defaultOptionsHashMap.put("-echo","off");
-            defaultOptionsHashMap.put("-ewf","on"); //defaultOptionsHashMap.put("-exitWhenFinished","off");
-            defaultOptionsHashMap.put("-fastTCP","off"); //
-            defaultOptionsHashMap.put("-gv","off"); //defaultOptionsHashMap.put("-gameViewer","off");
-            defaultOptionsHashMap.put("-gvc","off"); //defaultOptionsHashMap.put("-gameViewerContinuousUpdates","off");
+            defaultOptionsHashMap.put("-ewf","off"); //defaultOptionsHashMap.put("-exitWhenFinished","off");
+            defaultOptionsHashMap.put("-fastTCP","on"); //
+            defaultOptionsHashMap.put("-gv","on"); //defaultOptionsHashMap.put("-gameViewer","off");
+            defaultOptionsHashMap.put("-gvc","on"); //defaultOptionsHashMap.put("-gameViewerContinuousUpdates","off");
             defaultOptionsHashMap.put("-i","off"); // Invulnerability
-            defaultOptionsHashMap.put("-ld","0"); //defaultOptionsHashMap.put("-levelDifficulty","0");
+            defaultOptionsHashMap.put("-ld","3"); //defaultOptionsHashMap.put("-levelDifficulty","0");
             defaultOptionsHashMap.put("-ll","320"); //defaultOptionsHashMap.put("-levelLength","320");
-            defaultOptionsHashMap.put("-ls","0"); //defaultOptionsHashMap.put("-levelRandSeed","1");
-            defaultOptionsHashMap.put("-lt","0"); //defaultOptionsHashMap.put("-levelType","1");
+            defaultOptionsHashMap.put("-ls","2"); //defaultOptionsHashMap.put("-levelRandSeed","1");
+            defaultOptionsHashMap.put("-lt","1"); //defaultOptionsHashMap.put("-levelType","1");
             defaultOptionsHashMap.put("-maxFPS","off"); //defaultOptionsHashMap.put("-maxFPS","off");
             defaultOptionsHashMap.put("-m",""); //defaultOptionsHashMap.put("-matLabFile","DefaultMatlabFile");
             defaultOptionsHashMap.put("-mm","2");
-            defaultOptionsHashMap.put("-not","1"); //defaultOptionsHashMap.put("-attemptsNumber","5");
-            defaultOptionsHashMap.put("-pw","off"); //defaultOptionsHashMap.put("-pauseWorld","off");
+            defaultOptionsHashMap.put("-not","5"); //defaultOptionsHashMap.put("-attemptsNumber","5");
+            defaultOptionsHashMap.put("-pw","off"); //defaultOptionsHashMap.put("-pauseWorld","off");        //屏蔽妖怪    
             defaultOptionsHashMap.put("-port","4242"); //defaultOptionsHashMap.put("-port","4242");
-            defaultOptionsHashMap.put("-pr","off"); //defaultOptionsHashMap.put("-powerRestoration","off");
+            defaultOptionsHashMap.put("-pr","off"); //defaultOptionsHashMap.put("-powerRestoration","off"); //自动回血
             defaultOptionsHashMap.put("-ssiw","off"); //defaultOptionsHashMap.put("-stopSimulationIfWin","off");
             defaultOptionsHashMap.put("-server","off");
             defaultOptionsHashMap.put("-t","on"); //defaultOptionsHashMap.put("-timer","on");
             defaultOptionsHashMap.put("-tl","200"); //defaultOptionsHashMap.put("-timer","on");
-            defaultOptionsHashMap.put("-tc","off"); //defaultOptionsHashMap.put("-toolsConfigurator","off");
+            defaultOptionsHashMap.put("-tc","on"); //defaultOptionsHashMap.put("-toolsConfigurator","off");
             defaultOptionsHashMap.put("-vaot","off"); //defaultOptionsHashMap.put("-viewAlwaysOnTop","off");
-            defaultOptionsHashMap.put("-vlx","0"); //defaultOptionsHashMap.put("-viewLocationX","0");
-            defaultOptionsHashMap.put("-vly","0"); //defaultOptionsHashMap.put("-viewLocationY","0");
-            defaultOptionsHashMap.put("-vis","on"); //defaultOptionsHashMap.put("-visual","on");
+            defaultOptionsHashMap.put("-vlx","1000"); //defaultOptionsHashMap.put("-viewLocationX","0");
+            defaultOptionsHashMap.put("-vly","500"); //defaultOptionsHashMap.put("-viewLocationY","0");
+            defaultOptionsHashMap.put("-vis","on"); //defaultOptionsHashMap.put("-visual","on");     //展示游戏画面
             defaultOptionsHashMap.put("-zm","1");
             defaultOptionsHashMap.put("-ze","0");
         }
