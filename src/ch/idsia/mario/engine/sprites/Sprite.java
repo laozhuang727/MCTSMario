@@ -5,6 +5,9 @@ import ch.idsia.mario.engine.level.SpriteTemplate;
 
 import java.awt.*;
 
+/**
+ * 精灵
+ */
 public class Sprite
 {
     public static final int KIND_NONE = 0;

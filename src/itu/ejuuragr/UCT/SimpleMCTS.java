@@ -1,18 +1,16 @@
 package itu.ejuuragr.UCT;
 
+import ch.idsia.ai.agents.Agent;
+import ch.idsia.mario.engine.MarioComponent;
+import ch.idsia.mario.environments.Environment;
+import competition.cig.robinbaumgarten.astar.LevelScene;
+import competition.cig.robinbaumgarten.astar.level.Level;
 import itu.ejuuragr.MCTSAgent;
 import itu.ejuuragr.MCTSTools;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-
-import competition.cig.robinbaumgarten.astar.LevelScene;
-import competition.cig.robinbaumgarten.astar.level.Level;
-
-import ch.idsia.ai.agents.Agent;
-import ch.idsia.mario.engine.MarioComponent;
-import ch.idsia.mario.environments.Environment;
 
 /**
  * This Agent for the Mario AI Benchmark is based on Monte Carlo Tree Search.
@@ -24,7 +22,9 @@ public class SimpleMCTS extends KeyAdapter implements MCTSAgent<UCTNode> {
 	protected static int TIME_PER_TICK = 39; //Milliseconds
 	public static int ROLLOUT_CAP = 6;
 	public static double cp = 0.1875;
-	private boolean SAVE_NEXT_TREE = false; //Save next search tree as XML when it is complete
+
+    //change by ryan 2017-01-06
+	private boolean SAVE_NEXT_TREE = true; //Save next search tree as XML when it is complete
 	
 	//For simulation error correction
 	private float lastX, lastY; 

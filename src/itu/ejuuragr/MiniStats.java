@@ -29,14 +29,20 @@ public class MiniStats {
         EvaluationOptions options = new CmdLineOptions(new String[0]);
 
         options.setNumberOfTrials(1);
-        options.setVisualization(false);
+//        options.setVisualization(false);
         options.setMaxFPS(true);
+        options.setVisualization(true);
+        options.setPauseWorld(false);
+
         System.out.println("Testing controller " + controller + " with starting seed " + startingSeed);
 
         double competitionScore = 0;
 
-        competitionScore += testConfig (controller, options, startingSeed, 0, true);
+        competitionScore += testConfig (controller, options, startingSeed, 10, false);
+
+
         competitionScore += testConfig (controller, options, startingSeed, 0, false);
+        competitionScore += testConfig (controller, options, startingSeed, 0, true);
         competitionScore += testConfig (controller, options, startingSeed, 3, true);
         competitionScore += testConfig (controller, options, startingSeed, 3, false);
         competitionScore += testConfig (controller, options, startingSeed, 5, true);

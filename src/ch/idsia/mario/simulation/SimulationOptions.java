@@ -173,13 +173,15 @@ public class SimulationOptions extends ParameterContainer
     public void resetCurrentTrial()
     {
         currentTrial = 1;
-    }    
-//    public void setCurrentTrial(int curTrial) {
-//        setParameterValue("-not", s(curTrial));
-//    }
-//
-//    public int getCurrentTrial()
-//    {
-//        return i(getParameterValue("-not"));
-//    }
+    }
+
+    //Add by Ryan
+    public void setCurrentTrial(int curTrial) {
+        setParameterValue("-not", s(curTrial));
+    }
+
+    public int getCurrentTrial()
+    {
+        return i(getParameterValue("-not"));
+    }
 }
